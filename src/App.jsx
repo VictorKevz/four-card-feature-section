@@ -7,19 +7,24 @@ import Header from "./components/Header";
 import Data from "./components/Data";
 function App() {
   return (
-    <div>
-        <Header />
-    <div className="outer-container">
-    
-      <div className="grid-container">
-        {Data.map(({ id, title, description, icon }) => (
-          <Card key={id} id ={id} title={title} description={description} icon={icon} />
-        ))}
+    <main>
+      <Header />
+      <div className="outer-container">
+        
+        <div className="grid-container">
+          {Data.map(({ id, title, description, icon }) => (
+            <Card
+              key={id}
+              id={id}
+              title={title}
+              description={description}
+              icon={icon}
+            />
+          ))}
+        </div>
       </div>
-      
-    </div>
-    <Footer/>
-    </div>
+      <Footer />
+    </main>
   );
 }
 
