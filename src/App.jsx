@@ -1,29 +1,32 @@
-import React from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React, { useState } from "react";
 import Card from "./components/Card";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Data from "./components/Data";
+import "./App.css";
+import lightIcon from "./assets/images/light-mode.svg";
+import darkIcon from "./assets/images/dark-mode.svg";
+
 function App() {
+  const [isDark, setDark] = useState(false);
+
+  function toggleTheme() {
+    setDark(!isDark);
+  }
   return (
     <main>
-      <Header />
-      <div className="outer-container">
-        
-        <div className="grid-container">
-          {Data.map(({ id, title, description, icon }) => (
-            <Card
-              key={id}
-              id={id}
-              title={title}
-              description={description}
-              icon={icon}
+      <div className={`outer-container ${isDark ? "body-bg-dark" : ""}`}>
+        <div className="inner-container">
+          <Header isDark={isDark} />
+          <Card isDark={isDark} />
+          <div className="icons-container" onClick={toggleTheme}>
+            <p className="dark-mode-text">Switch</p>
+            <img
+              src={isDark ? lightIcon : darkIcon}
+              alt={`${isDark ? "light Icon" : "dark Icon"}`}
+             
             />
-          ))}
+          </div>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }

@@ -1,15 +1,18 @@
 import React from "react";
-
-function Header() {
+import "./css/header.css";
+function Header({isDark}) {
   return (
-    <div className="header-container">
-      <h1>Reliable, efficient delivery <br/><span>Powered by Technology</span></h1>
-      
-      <p>
+    <header className="header-container">
+      <h1 className={`header-title ${isDark ? "dark-text" : ""}`}>
+        <span className="title-light">Reliable, efficient delivery</span>
+        Powered by Technology
+      </h1>
+
+      <p className="header-parag">
         Our Artificial Intelligence powered tools use millions of project data
         points to ensure that your project is successful
       </p>
-    </div>
+    </header>
   );
 }
 

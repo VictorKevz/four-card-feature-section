@@ -3,7 +3,7 @@ import teamBuilderIcon from "../assets/images/icon-team-builder.svg";
 import karmaIcon from "../assets/images/icon-karma.svg";
 import calculatorIcon from "../assets/images/icon-calculator.svg";
 
-const Data = [
+const data = [
   {
     id: 1,
     title: "Supervisor",
@@ -13,7 +13,7 @@ const Data = [
   {
     id: 2,
     title: "Team Builder",
-    description: "Scans our talent network to create the optimal team for your",
+    description: "Scans our talent network to create the optimal team for your project",
     icon: teamBuilderIcon ,
   },
   {
@@ -25,8 +25,8 @@ const Data = [
   {
     id: 4,
     title: "Calculator",
-    description: "Uses data from past projects to provide better delivery",
+    description: "Uses data from past projects to provide better delivery estimates",
     icon: calculatorIcon,
   },
 ];
-export default Data;
+export default data;

@@ -1,61 +1,75 @@
-Four Card Feature Section Challenge
-![alt text](public/design/desktop-design.jpg)
-This project is a front-end coding challenge that involves creating a four card feature section. The challenge is to build a responsive layout where each card represents a different feature or service. This README provides an overview of the challenge requirements, how to set up the project, and additional resources for further learning.
 
-Challenge Overview
-The challenge is to create a feature section with four cards, each showcasing a unique feature or service. The layout should be responsive and visually appealing, providing clear information about each feature.
+# Four Card Feature Section
+![alt text](public/design/desktop-preview.jpg)
+This project is a solution to the [Four Card Feature Section challenge](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK) on Frontend Mentor. The goal is to build out this feature section and get it looking as close to the design as possible. The project includes additional features like dark mode and hover states.
 
-Requirements
-Display four cards, each containing:
-Title
-Description
-Icon or image representing the feature
-Ensure the layout is responsive and looks good on various screen sizes.
-Use CSS to style the cards, ensuring readability and visual consistency.
-Implement hover effects or interactive elements to enhance user experience if desired.
-Technologies Used
-HTML: Markup language for structuring the content of the feature section.
-CSS: Styling language used to design and layout the cards.
-React (optional): JavaScript library used to create reusable UI components and manage state.
-Setup Instructions
-Clone the repository to your local machine using the following command:
+## Live Site
 
-bash
-Copy code
-git clone https://github.com/VictorKevz/four-card-feature-section
-Navigate to the project directory:
+You can view the live site [here](https://victorkevz.github.io/four-card-feature-section/).
 
-bash
-Copy code
-cd four-card-feature-section
-If you're using Vite React, install dependencies and start the development server:
+## Table of Contents
 
-arduino
-Copy code
-npm install
-npm run dev
-If you're using plain HTML and CSS, simply open the index.html file in your web browser.
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
-View the project in your web browser by navigating to http://localhost:3000 or the appropriate port specified by your development server.
+## Overview
 
-Project Structure
-The project directory structure may vary depending on whether you're using Vite React or plain HTML/CSS:
+This project involves creating a responsive four-card feature section that adapts to different screen sizes. The design has been implemented as closely as possible to the provided mockups. 
 
-For Vite React:
+## Features
 
-src/: Directory containing React components and other source files.
-public/: Directory containing static assets like images or icons.
-index.html: Main HTML file where the React app is mounted.
-App.jsx: Main React component responsible for rendering the feature section.
-styles.css: CSS file containing styles for the feature section.
-components/: Directory containing React components used in the project.
-For plain HTML/CSS:
+- **Responsive Design**: The layout adjusts optimally for various device screen sizes.
+- **Dark Mode**: Toggle between light and dark themes for better accessibility and user preference.
+- **Hover States**: Interactive hover effects for better user experience.
 
-index.html: Main HTML file containing the structure of the feature section.
-styles.css: CSS file containing styles for the feature section.
-images/: Directory containing images or icons used in the feature cards.
-Additional Resources
-MDN Web Docs: Comprehensive web development documentation and guides.
-CSS Tricks: Tips, tricks, and tutorials on CSS and front-end development.
-React Documentation: Official documentation for React library.
-Vite Documentation: Official documentation for Vite build tool.
+## Technologies Used
+
+- **HTML5**
+- **CSS**
+- **React.js**
+- **Vite**
+
+## Setup and Installation
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/VictorKevz/four-card-feature-section.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd four-card-feature-section
+   ```
+3. **Install the dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+
+- **View the optimal layout**: The site layout adjusts based on the device screen size, providing an optimal viewing experience on both desktop and mobile devices.
+- **Toggle Dark Mode**: Use the dark mode toggle to switch between light and dark themes.
+- **Hover Effects**: Hover over the cards to see the interactive effects.
+
+## Acknowledgements
+
+- This project is based on a challenge from [Frontend Mentor](https://www.frontendmentor.io/).
+- The design and initial inspiration for this project were provided by Frontend Mentor.
+
+## Contact
+
+For any questions or feedback, please reach out to me at:
+- **GitHub**: [VictorKevz](https://github.com/VictorKevz)
+- **Live Site**: [Live Site](https://victorkevz.github.io/four-card-feature-section/)
+
+---

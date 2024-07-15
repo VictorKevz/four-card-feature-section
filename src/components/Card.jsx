@@ -1,27 +1,53 @@
 import React from "react";
+import data from "./Data";
+import "./css/card.css";
 
-function Card({ id, title, description, icon }) {
+function Card({isDark}) {
+  const checkClassName = (id) => {
+    if (id == 1) {
+      return "supervisor";
+    }
+    if (id == 2) {
+      return "team-builder";
+    }
+    if (id == 3) {
+      return "karma";
+    }
+    if (id == 4) {
+      return "calculator";
+    }
+  };
 
-
-const checkClassName = () =>{
-if (id == 1){return "card-container supervisor"}
-else if (id == 2){return "card-container team-builder"}
-else if (id == 3){return "card-container karma"}
-else if (id == 4){return "card-container calculator"}
-
-    };
-
-    return (
-        <div className={checkClassName()} >
-            <div className="card-title-description">
-                <h3>{title}</h3>
-                <p>{description}</p>
+  return (
+    <div className="card-container">
+      {data.map((obj) => {
+        return (
+          <div
+            key={obj.id}
+            className={`card ${isDark ? "card-dark-bg" : ""} ${checkClassName(
+              obj.id
+            )}`}
+          >
+            <div className="text-container">
+              <h2
+                className={`card-title ${checkClassName(obj.id)} ${
+                  isDark ? "dark-text" : ""
+                }`}
+              >
+                {obj.title}
+              </h2>
+              <p className={`card-parag ${checkClassName(obj.id)}`}>
+                {obj.description}
+              </p>
             </div>
             <div className="card-icon">
-            <img src={icon} alt="an icon"  />
+              <img src={obj.icon} alt="icon" className="card-icon" />
             </div>
-        </div>
-    );
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default Card;
